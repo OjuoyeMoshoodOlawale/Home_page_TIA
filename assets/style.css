@@ -56,7 +56,7 @@ body {
 .grid-container {
   padding: 15px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-auto-flow: row;
 }
 .my-work h2 {
@@ -104,4 +104,51 @@ body {
 }
 .my-contact .flex img {
   height: 60vh;
+}
+.my-contact i {
+  font-size: 25px;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    flex-direction: column;
+    position: static;
+    height: 100vh;
+    padding: 0;
+    position: static;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 100vw;
+    height: 70vw;
+    padding: 5px;
+    position: static;
+  }
+  .flex-container img {
+    width: 90vw;
+    height: auto;
+    position: static;
+    padding: 5px;
+  }
+  .hero-text {
+    padding: 10px;
+    width: 100vw;
+  }
+  .my-contact .flex {
+    flex-direction: column;
+  }
+  .my-contact {
+    padding: 0;
+  }
+  .my-contact .contact-text {
+    padding: 10px;
+  }
+  .my-contact img {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    padding: auto;
+  }
 }
