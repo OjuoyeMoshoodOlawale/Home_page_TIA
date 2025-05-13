@@ -19,13 +19,15 @@ body {
 }
 .about-hero {
   background-color: #018dae;
-  height: 70vh;
+  height: 80vh;
   width: 100vw;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding: 10px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .my-work {
